@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VLibras Widget OCR</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+      }
+
+      h1 {
+        margin: 40px 0;
+      }
+
+      .images-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .ocr-img {
+        width: 400px;
+        max-width: 90%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Click on image to load the Cropper</h1>
+
+    <div class="images-container">
+      <img class="ocr-img" src="./assets/images/image1.png" />
+      <img class="ocr-img" src="./assets/images/image2.png" />
+      <img class="ocr-img" src="./assets/images/image3.png" />
+      <img class="ocr-img" src="./assets/images/image4.png" />
+    </div>
+
+    <script src="./dist/bundle.js"></script>
+  </body>
+</html>

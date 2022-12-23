@@ -1,0 +1,29 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.vwo-scrollBar--hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.vwo-scrollBar--hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.vwo-img-ocr {
+  cursor: pointer;
+  outline: 2px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 10000 !important;
+}
+
+.vwo-img-ocr:hover {
+  filter: brightness(0.8);
+  outline-color: black;
+}
+
+div[vw] {
+  z-index: 99999999 !important;
+}

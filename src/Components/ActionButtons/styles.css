@@ -1,0 +1,42 @@
+.vwo-cropper-buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.vwo-action-button--selected {
+  color: #5388dd !important;
+}
+
+.vwo-close-modal,
+.vwo-crop-and-move {
+  color: white;
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  transition: all 0.3s ease;
+}
+
+.vwo-close-modal:hover {
+  color: #f32020;
+}
+
+.vwo-crop-and-move:hover {
+  color: #5388dd;
+}
+
+.vwo-crop-and-move:focus {
+  color: #ffffff;
+}
+
+.vwo-close-modal svg {
+  position: absolute;
+}

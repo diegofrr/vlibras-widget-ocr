@@ -1,0 +1,170 @@
+.vwo-extraction-content > * {
+  margin: 0;
+  padding: 0;
+}
+
+.vwo-extraction-result {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+  top: 0;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.vwo-extraction-result::-webkit-scrollbar {
+  display: none;
+}
+
+.vwo-extraction-container {
+  display: grid;
+  place-items: center;
+  padding: 40px 0;
+  height: 100%;
+}
+
+.vwo-extraction-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  min-height: 80px;
+  width: 100%;
+  padding: 20px;
+  width: 70%;
+  max-width: 700px;
+}
+
+.vwo-extraction-content p {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.vwo-extraction-content p svg {
+  color: rgb(27, 146, 27);
+}
+
+.vwo-extraction-result p {
+  color: #000;
+  text-align: left;
+  font-weight: bold;
+}
+
+.vwo-extraction-result span,
+.vwo-extraction-result textarea {
+  color: #000;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  padding: 10px;
+}
+
+.vwo-extraction-result textarea {
+  resize: none;
+  border-radius: 6px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.vwo-extraction-result textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.vwo-extraction-result textarea:focus {
+  outline: 2px solid #1351b4;
+  border: none;
+}
+
+.vwo-extraction-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  position: relative;
+}
+
+.vwo-extraction-buttons button {
+  border-radius: 6px;
+  height: 34px;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  padding: 0 16px;
+  border-radius: 34px;
+}
+
+.vwo-extraction-buttons button:disabled {
+  cursor: not-allowed;
+}
+
+.vwo-button-edit {
+  color: #000;
+  background-color: transparent;
+}
+
+.vwo-button-edit:hover {
+  background-color: #f0f0f0;
+}
+
+.vwo-button-translate {
+  color: #ffffff;
+  background-color: #1351b4;
+  position: absolute;
+  left: 0;
+}
+
+.vwo-button-retry {
+  color: #cf5d5d;
+  background-color: transparent;
+}
+
+.vwo-button-translate:hover {
+  filter: brightness(1.2);
+}
+
+.vwo-button-translate:disabled {
+  filter: grayscale(1);
+  opacity: 0.5;
+}
+
+.vwo-button-translate:disabled:hover {
+  filter: grayscale(1);
+}
+
+.vwo-button-retry:hover {
+  color: #c93434;
+  background-color: #ff00001a;
+}
+
+@media only screen and (max-width: 560px) {
+  .vwo-extraction-buttons {
+    flex-direction: column;
+  }
+
+  .vwo-extraction-buttons button {
+    width: 100%;
+  }
+
+  .vwo-button-translate {
+    position: relative;
+  }
+
+  .vwo-extraction-result span,
+  .vwo-extraction-result textarea {
+    font-size: 1rem;
+  }
+}

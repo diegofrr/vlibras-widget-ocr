@@ -1,0 +1,26 @@
+.vwo-cropper-alert {
+  color: #ff6262;
+  font-size: 12px;
+  opacity: 0.6;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  gap: 10px;
+  max-width: 200px;
+}
+
+.vwo-cropper-alert svg {
+  animation: landscapeAnimation 2s infinite;
+}
+
+@keyframes landscapeAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  75%,
+  100% {
+    transform: rotate(90deg);
+  }
+}
