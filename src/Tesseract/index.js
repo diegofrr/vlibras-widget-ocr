@@ -40,6 +40,7 @@ export async function extractText(image) {
           console.log("Nenhum texto extraído.");
         } else {
           // loadExtractionResult(_text);
+          console.log(_text);
           translateWithVlibras(_text);
         }
         submitButton.innerHTML = "Extrair texto";
