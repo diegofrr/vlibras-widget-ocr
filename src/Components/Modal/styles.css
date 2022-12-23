@@ -97,4 +97,8 @@
   .vwo-cropper-submit-button {
     width: 100%;
   }
+
+  .vwo-cropper-submit-button svg {
+    display: none;
+  }
 }
