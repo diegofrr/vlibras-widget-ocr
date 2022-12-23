@@ -2,7 +2,10 @@ import Tesseract from "tesseract.js";
 
 import { formattedText } from "./utils";
 import { loadingSpinnerHTML } from "../Components/LoadingSpinner";
-import { hideModal } from "../Components/Modal";
+import {
+  extractionWithoutResult,
+  loadExtractionResult,
+} from "../Components/ExtractionResult";
 
 let extracting = false;
 
@@ -36,11 +39,9 @@ export async function extractText(image) {
       await worker.terminate().then(() => {
         const _text = formattedText(text);
         if (_text.length === 0) {
-          // extractionWithoutResult();
-          console.log("Nenhum texto extraído.");
+          extractionWithoutResult();
         } else {
-          // loadExtractionResult(_text);
-          translateWithVlibras(_text);
+          loadExtractionResult(_text);
         }
         submitButton.innerHTML = "Extrair texto";
         extracting = false;
@@ -50,13 +51,4 @@ export async function extractText(image) {
     console.log("⚠️ Algo saiu errado :(");
   }
   extracting = false;
-}
-
-function translateWithVlibras(text) {
-  const vlibrasWidget = document.querySelector("vlibraswidget");
-  const oldValue = vlibrasWidget.innerHTML;
-  vlibrasWidget.innerHTML = text;
-  vlibrasWidget.click();
-  vlibrasWidget.innerHTML = oldValue;
-  hideModal();
 }
