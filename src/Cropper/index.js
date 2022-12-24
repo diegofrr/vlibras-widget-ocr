@@ -33,6 +33,7 @@ export function loadCropper() {
   }
 
   submitButton.onclick = async () => {
+    cropper.disable();
     submitButton.innerHTML = `Extraindo ${loadingSpinnerHTML()}`;
     submitButton.setAttribute("disabled", "");
     const croppedCanvas = cropper.getCroppedCanvas();
