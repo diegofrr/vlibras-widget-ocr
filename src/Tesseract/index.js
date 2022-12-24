@@ -2,7 +2,7 @@ import Tesseract from "tesseract.js";
 
 import { formattedText } from "./utils";
 
-let extracting = false;
+export let extracting = false;
 
 export async function extractText(image) {
   if (extracting) return console.log("🤚 Já existe uma extração acontecendo.");
@@ -40,6 +40,5 @@ export async function extractText(image) {
       return "";
     }
   };
-
   return await finalResult();
 }

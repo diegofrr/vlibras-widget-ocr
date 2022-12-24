@@ -1,4 +1,4 @@
-const cloneLinks = [];
+let cloneLinks = [];
 
 export function LinksConfig() {
   document.querySelectorAll("a").forEach((link) => {

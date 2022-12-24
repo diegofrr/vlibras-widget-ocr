@@ -89,6 +89,11 @@
   background: #1351b4 !important;
 }
 
+.vwo-cropper-submit-button:disabled {
+  user-select: none;
+  cursor: wait;
+}
+
 .vwo-finished-extraction {
   background-color: green;
 }

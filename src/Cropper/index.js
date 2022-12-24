@@ -3,6 +3,7 @@ import "cropperjs/dist/cropper.css";
 
 import { Image } from "image-js";
 import { hideModal } from "../Components/Modal";
+import { extracting } from "../Tesseract";
 import { extractText } from "../Tesseract";
 import { contrastImage } from "../Tesseract/utils";
 import { checkWindowSize } from "../Components/CheckWindowSize";
@@ -26,8 +27,14 @@ export function loadCropper() {
     },
   });
 
+  if (extracting) {
+    submitButton.innerHTML = `Extraindo ${loadingSpinnerHTML()}`;
+    submitButton.setAttribute("disabled", "");
+  }
+
   submitButton.onclick = async () => {
     submitButton.innerHTML = `Extraindo ${loadingSpinnerHTML()}`;
+    submitButton.setAttribute("disabled", "");
     const croppedCanvas = cropper.getCroppedCanvas();
     const url = croppedCanvas.toDataURL("image/jpeg");
     let img = await imgPreprocessing(url);
@@ -50,9 +57,11 @@ export function loadCropper() {
 
 function translateWithVlibras(text) {
   hideModal();
-  const vlibrasWidget = document.querySelector("vlibraswidget");
-  const oldValue = vlibrasWidget.innerHTML;
-  vlibrasWidget.innerHTML = text;
-  vlibrasWidget.click();
-  vlibrasWidget.innerHTML = oldValue;
+  try {
+    const vlibrasWidget = document.querySelector("vlibraswidget");
+    const oldValue = vlibrasWidget.innerHTML;
+    vlibrasWidget.innerHTML = text;
+    vlibrasWidget.click();
+    vlibrasWidget.innerHTML = oldValue;
+  } catch {}
 }
