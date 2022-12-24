@@ -10,4 +10,4 @@ Como testar:
 5) Utilize a funcionalidade selecionando uma imagem do site que contenha textos.
 
 Obs.:
-* Caso o console retorno algum erro relacionado ao navegador com histórico cheio, clique `CTRL + SHIF + P`, procure e execute a funcionalidade "Limpar histórico do console", após, cole e execute o script novamente.
+* <b>Após o passo 3</b>, caso o console retorno algum erro relacionado ao navegador com histórico cheio, clique `CTRL + SHIF + P`, procure e execute a funcionalidade "Limpar histórico do console", após, cole e execute o script novamente.
