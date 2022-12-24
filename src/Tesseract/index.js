@@ -34,7 +34,7 @@ export async function extractText(image) {
         }
         extracting = false;
       });
-      return text;
+      return formattedText(text);
     } catch {
       console.log("⚠️ Algo saiu errado :(");
       return "";
