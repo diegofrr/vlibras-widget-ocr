@@ -7,6 +7,15 @@
   position: relative;
 }
 
+.vwo-cropper-buttons-container span {
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  text-align: center;
+}
+
 .vwo-action-button--selected {
   color: #5388dd !important;
 }
@@ -39,4 +48,10 @@
 
 .vwo-close-modal svg {
   position: absolute;
+}
+
+@media only screen and (max-width: 480px) {
+  .vwo-cropper-buttons-container span {
+    font-size: 12px;
+  }
 }

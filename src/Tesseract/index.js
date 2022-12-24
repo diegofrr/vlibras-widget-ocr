@@ -1,8 +1,6 @@
 import Tesseract from "tesseract.js";
 
 import { formattedText } from "./utils";
-import { loadingSpinnerHTML } from "../Components/LoadingSpinner";
-import { hideModal } from "../Components/Modal";
 
 let extracting = false;
 
@@ -10,11 +8,7 @@ export async function extractText(image) {
   if (extracting) return console.log("🤚 Já existe uma extração acontecendo.");
   else {
     extracting = true;
-    console.log("⚡ Inicializando a extração...");
   }
-
-  const submitButton = document.querySelector(".vwo-cropper-submit-button");
-  submitButton.innerHTML = `Extraindo ${loadingSpinnerHTML()}`;
 
   const worker = await Tesseract.createWorker({
     logger: (m) => {},
@@ -22,8 +16,8 @@ export async function extractText(image) {
   const scheduler = Tesseract.createScheduler();
   scheduler.addWorker(worker);
 
-  try {
-    (async () => {
+  const finalResult = async () => {
+    try {
       await worker.loadLanguage("por");
       await worker.initialize("por");
       const {
@@ -40,24 +34,15 @@ export async function extractText(image) {
           console.log("Nenhum texto extraído.");
         } else {
           // loadExtractionResult(_text);
-          console.log(_text);
-          translateWithVlibras(_text);
         }
-        submitButton.innerHTML = "Extrair texto";
         extracting = false;
       });
-    })();
-  } catch {
-    console.log("⚠️ Algo saiu errado :(");
-  }
-  extracting = false;
-}
+      return text;
+    } catch {
+      console.log("⚠️ Algo saiu errado :(");
+      return "";
+    }
+  };
 
-function translateWithVlibras(text) {
-  const vlibrasWidget = document.querySelector("vlibraswidget");
-  const oldValue = vlibrasWidget.innerHTML;
-  vlibrasWidget.innerHTML = text;
-  vlibrasWidget.click();
-  vlibrasWidget.innerHTML = oldValue;
-  hideModal();
+  return await finalResult();
 }

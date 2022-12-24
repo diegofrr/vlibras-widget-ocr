@@ -56,7 +56,17 @@
   display: none !important;
 }
 
-.vwo-cropper-submit-button {
+.vwo-cropper-modal-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.vwo-cropper-submit-button,
+.vwo-cropper-addArea-button {
   height: 40px;
   border: none;
   cursor: pointer;
@@ -64,14 +74,18 @@
   border-radius: 40px;
   background: #1351b4;
   color: #fff;
-  margin-right: auto;
-  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   gap: 10px;
   font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.vwo-cropper-addArea-button {
+  padding: 0 20px;
+  margin-left: auto;
 }
 
 .vwo-cropper-submit-button svg {
@@ -79,14 +93,22 @@
   height: 20px;
 }
 
-.vwo-cropper-submit-button:hover {
+.vwo-cropper-submit-button:hover,
+.vwo-cropper-addArea-button:hover {
   filter: brightness(1.2);
   background: #1351b4 !important;
 }
 
-.vwo-cropper-submit-button:active {
+.vwo-cropper-submit-button:active,
+.vwo-cropper-addArea-button:active {
   filter: brightness(0.8);
   background: #1351b4 !important;
+}
+
+.vwo-cropper-submit-button:disabled,
+.vwo-cropper-addArea-button:disabled {
+  user-select: none;
+  cursor: wait;
 }
 
 .vwo-finished-extraction {
@@ -97,8 +119,11 @@
   .vwo-cropper-submit-button {
     width: 100%;
   }
+  .vwo-cropper-modal-buttons {
+    flex-direction: column;
+  }
 
-  .vwo-cropper-submit-button svg {
-    display: none;
+  .vwo-cropper-addArea-button {
+    margin: 0;
   }
 }
