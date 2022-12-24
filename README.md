@@ -11,13 +11,3 @@ Como testar:
 
 Obs.:
 * Caso o console retorno algum erro relacionado ao navegador com histórico cheio, clique `CTRL + SHIF + P`, procure e execute a funcionalidade "Limpar histórico do console", após, cole e execute o script novamente.
-* Execute também o script abaixo para evitar redirecionamento após clicar em imagens filhas de tags âncoras:
-```javascript
-document.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", (event) => {
-    event.preventDefault();
-  });
-});
-
-```
-
