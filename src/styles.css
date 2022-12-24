@@ -33,3 +33,8 @@ div[vw] {
 .vw-links .vw-tooltip.active > .vw-tooltip__item {
   z-index: 10000 !important;
 }
+
+vlibraswidget.vw-text {
+  z-index: 10000 !important;
+  position: relative;
+}

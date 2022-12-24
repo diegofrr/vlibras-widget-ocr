@@ -1,7 +1,7 @@
 import "./styles.css";
 
-import { hideModal } from "../Modal";
 import feather from "feather-icons";
+import { hideModal } from "../Modal";
 
 export function CloseModalButton() {
   const button = document.querySelector(
