@@ -2,16 +2,18 @@ import Cropper from "cropperjs";
 import "cropperjs/dist/cropper.css";
 
 import { Image } from "image-js";
+import { hideModal } from "../Components/Modal";
 import { extractText } from "../Tesseract";
-import { checkWindowSize } from "../Components/CheckWindowSize";
 import { contrastImage } from "../Tesseract/utils";
+import { checkWindowSize } from "../Components/CheckWindowSize";
+import { loadingSpinnerHTML } from "../Components/LoadingSpinner";
 
 export function loadCropper() {
   checkWindowSize();
 
   const imageContent = document.querySelector(".vwo-cropper-img-container");
   const image = document.querySelector(".vwo-cropper-img");
-  const button = document.querySelector(".vwo-cropper-submit-button");
+  const submitButton = document.querySelector(".vwo-cropper-submit-button");
 
   let cropper = new Cropper(image, {
     ready: function (event) {
@@ -24,11 +26,12 @@ export function loadCropper() {
     },
   });
 
-  button.onclick = async () => {
+  submitButton.onclick = async () => {
+    submitButton.innerHTML = `Extraindo ${loadingSpinnerHTML()}`;
     const croppedCanvas = cropper.getCroppedCanvas();
     const url = croppedCanvas.toDataURL("image/jpeg");
     let img = await imgPreprocessing(url);
-    extractText(img);
+    translateWithVlibras(await extractText(img));
   };
 
   async function imgPreprocessing(src) {
@@ -43,4 +46,13 @@ export function loadCropper() {
 
     return img;
   }
+}
+
+function translateWithVlibras(text) {
+  hideModal();
+  const vlibrasWidget = document.querySelector("vlibraswidget");
+  const oldValue = vlibrasWidget.innerHTML;
+  vlibrasWidget.innerHTML = text;
+  vlibrasWidget.click();
+  vlibrasWidget.innerHTML = oldValue;
 }
