@@ -1,7 +1,7 @@
 import { hideModal } from "./Components/Modal";
 import "./Cropper/index";
 import { ImagesConfig, removeImagesConfig } from "./InitialConfigs/Images";
-import { LinksConfig } from "./InitialConfigs/Links";
+import { LinksConfig, removeLinksConfig } from "./InitialConfigs/Links";
 import "./Tesseract/index";
 import "./styles.css";
 
@@ -10,7 +10,7 @@ const vwBox = document.querySelector("div[vp-box]");
 const observer = new MutationObserver((mutation) => {
   vwBox
     .querySelector(".vpw-settings-btn-close")
-    .addEventListener("click", destroyVlibrasWidgetOCR);
+    .addEventListener("click", () => destroyVlibrasWidgetOCR());
 });
 
 vwButton.addEventListener("click", () => {
@@ -19,7 +19,7 @@ vwButton.addEventListener("click", () => {
 
 observer.observe(vwBox, { childList: true });
 
-export const MasterOCRElement = document.createElement("div");
+export let MasterOCRElement = document.createElement("div");
 
 function initializeVlibrasWidgetOCR() {
   ImagesConfig();
@@ -33,4 +33,5 @@ function initializeVlibrasWidgetOCR() {
 export function destroyVlibrasWidgetOCR() {
   hideModal();
   removeImagesConfig();
+  removeLinksConfig();
 }

@@ -13,7 +13,8 @@
 
 .vwo-img-ocr {
   cursor: pointer;
-  outline: 2px solid transparent;
+  outline: 2px dashed transparent;
+  outline-offset: 2px;
   transition: all 0.3s ease;
   position: relative;
   z-index: 10000 !important;
@@ -21,7 +22,7 @@
 
 .vwo-img-ocr:hover {
   filter: brightness(0.8);
-  outline-color: black;
+  outline-color: #1351b4;
 }
 
 /* VLibras Widget */

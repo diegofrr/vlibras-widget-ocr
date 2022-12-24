@@ -1,20 +1,26 @@
+const cloneLinks = [];
+
 export function LinksConfig() {
-  const allLinks = document.querySelectorAll("a");
-
-  allLinks.forEach((link) => {
-    link.addEventListener("click", (event) => {
-      event.preventDefault();
-    });
-    // const clone = link;
-    // link.replaceWith(link.cloneNode(true));
+  document.querySelectorAll("a").forEach((link) => {
+    try {
+      const parentNodeClasses = link.parentNode.classList;
+      if (!parentNodeClasses.contains("vw-tooltip__item")) {
+        link.addEventListener("click", (event) => {
+          event.preventDefault();
+        });
+      }
+      const clone = link;
+      cloneLinks.push({
+        link,
+        clone,
+      });
+    } catch {}
   });
+}
 
-  // allLinks.forEach((link) => {
-  //   const parentNodeClasses = link.parentNode.classList;
-  //   if (!parentNodeClasses.contains("vw-tooltip__item")) {
-  //     link.addEventListener("click", (event) => {
-  //       event.preventDefault();
-  //     });
-  //   }
-  // });
+export function removeLinksConfig() {
+  cloneLinks.forEach((item) => {
+    item.link.replaceWith(item.clone.cloneNode(true));
+  });
+  cloneLinks = [];
 }
