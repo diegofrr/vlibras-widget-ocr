@@ -16,11 +16,10 @@ export function loadCropper() {
   const imageContent = document.querySelector(".vwo-cropper-img-container");
   const image = document.querySelector(".vwo-cropper-img");
   const submitButton = document.querySelector(".vwo-cropper-submit-button");
-  let imageRatio = imageContent.clientWidth / image.naturalWidth;
 
   let cropper = new Cropper(image, {
     ready: function (event) {
-      cropper.zoomTo(imageRatio);
+      cropper.zoomTo(imageContent.clientWidth / image.naturalWidth);
     },
     zoom: function (event) {
       if (event.detail.oldRatio === 1) {
@@ -44,13 +43,9 @@ export function loadCropper() {
     translateWithVlibras(await extractText(img));
   };
 
-  zoomInBtn().onclick = () => {
-    cropper.zoomTo((imageRatio += 0.1));
-  };
+  zoomInBtn().onclick = () => cropper.zoom(+0.1);
 
-  zoomOutBtn().onclick = () => {
-    cropper.zoomTo((imageRatio += -0.1));
-  };
+  zoomOutBtn().onclick = () => cropper.zoom(-0.1);
 
   async function imgPreprocessing(src) {
     const manipulation = await Image.load(src);
