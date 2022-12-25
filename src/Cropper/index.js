@@ -8,6 +8,7 @@ import { extractText } from "../Tesseract";
 import { contrastImage } from "../Tesseract/utils";
 import { checkWindowSize } from "../Components/CheckWindowSize";
 import { loadingSpinnerHTML } from "../Components/LoadingSpinner";
+import { zoomInBtn, zoomOutBtn } from "../Components/ActionButtons/ImageZoom";
 
 export function loadCropper() {
   checkWindowSize();
@@ -15,10 +16,11 @@ export function loadCropper() {
   const imageContent = document.querySelector(".vwo-cropper-img-container");
   const image = document.querySelector(".vwo-cropper-img");
   const submitButton = document.querySelector(".vwo-cropper-submit-button");
+  let imageRatio = imageContent.clientWidth / image.naturalWidth;
 
   let cropper = new Cropper(image, {
     ready: function (event) {
-      cropper.zoomTo(imageContent.clientWidth / image.naturalWidth);
+      cropper.zoomTo(imageRatio);
     },
     zoom: function (event) {
       if (event.detail.oldRatio === 1) {
@@ -40,6 +42,14 @@ export function loadCropper() {
     const url = croppedCanvas.toDataURL("image/jpeg");
     let img = await imgPreprocessing(url);
     translateWithVlibras(await extractText(img));
+  };
+
+  zoomInBtn().onclick = () => {
+    cropper.zoomTo((imageRatio += 0.1));
+  };
+
+  zoomOutBtn().onclick = () => {
+    cropper.zoomTo((imageRatio += -0.1));
   };
 
   async function imgPreprocessing(src) {

@@ -7,12 +7,19 @@
   position: relative;
 }
 
+.vwo-cropper-buttons-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
 .vwo-action-button--selected {
   color: #5388dd !important;
 }
 
-.vwo-close-modal,
-.vwo-crop-and-move {
+.vwo-cropper-buttons-container button {
   color: white;
   background: none !important;
   border: none !important;
@@ -25,12 +32,20 @@
   transition: all 0.3s ease;
 }
 
-.vwo-close-modal:hover {
-  color: #f32020;
+.vwo-cropper-buttons-container button:hover {
+  color: #5388dd !important;
 }
 
-.vwo-crop-and-move:hover {
-  color: #5388dd;
+.vwo-cropper-buttons-container button:active {
+  color: #1351b4 !important;
+}
+
+.vwo-cropper-buttons-container .vwo-close-modal:hover {
+  color: #f32020 !important;
+}
+
+.vwo-cropper-buttons-container .vwo-close-modal:active {
+  color: #b11a1a !important ;
 }
 
 .vwo-crop-and-move:focus {
