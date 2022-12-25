@@ -33,6 +33,7 @@
 }
 
 .vwo-image-links a {
+  color: #1351b4;
   position: absolute;
   display: flex;
   align-items: center;
@@ -45,6 +46,10 @@
   transform: translateX(-50%);
   border-radius: 20px;
   box-shadow: 2px 2px 5px rgb(0 0 0 / 20%);
+}
+
+.vwo-image-links a:hover {
+  text-decoration: underline;
 }
 
 /* VLibras Widget */
