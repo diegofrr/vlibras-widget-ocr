@@ -9,7 +9,6 @@
   display: grid;
   place-items: center;
   overflow-y: scroll;
-  padding: 40px 0;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -38,6 +37,7 @@
   flex-direction: column;
   gap: 20px;
   width: 70%;
+  margin: 40px 0;
   max-width: 800px;
 }
 
