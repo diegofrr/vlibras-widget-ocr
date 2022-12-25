@@ -25,6 +25,28 @@
   outline-color: #1351b4;
 }
 
+.vwo-image-links {
+  z-index: 100000 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.vwo-image-links a {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 0 10px;
+  height: 30px;
+  white-space: nowrap;
+  border: none !important;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgb(0 0 0 / 20%);
+}
+
 /* VLibras Widget */
 
 div[vw] {
