@@ -1,6 +1,12 @@
-# vlibras-widget-ocr
+<p align="center">
+<b>vlibras-widget-ocr</b> - BETA
+</p>
 
+<p align="center">
 Feature para a extração de textos em imagens e tradução em Libras em sites que utilizam o VLibras Widget
+</p>
+
+#
 
 ### Sobre
 O <b>VLibras Widget</b> faz parte do conjunto de ferramentas da suíte <b>VLibras</b> que tem como intuito traduzir conteúdos digitais em Português para Libras. Atualmente, sites que utiliza o Widget fornecem aos usuários a possiblidade de traduzirem para Libras os elementos de textos presentes no HTML na página, como por exemplo: títulos (h1, ..., h6), parágrafos (p), âncoras (a) e etc... Apesar da solução possibilitar o acesso à tradução da maior parte dos textos no site, existem outros que ficam fora desta solução - estes são os textos presentes em imagens.
