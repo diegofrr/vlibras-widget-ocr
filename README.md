@@ -1,5 +1,5 @@
 <p align="center">
-<b>vlibras-widget-ocr</b> - BETA
+<b>vlibras-widget-ocr</b>
 </p>
 
 <p align="center">
@@ -24,3 +24,17 @@ Com o intuito de aumentar ainda mais o acesso à comunidade surda, esta feature 
 
 Obs.:
 - <b>Após o passo 3</b>, caso obtenha o erro relacionado ao histórico do console cheio, clique `CTRL + SHIF + P`, procure e execute a funcionalidade "Limpar histórico do console", logo após, cole e execute o script novamente.
+- Existe a possiblidade de alguns sites ficarem mal formatados e/ou quebrados após a aplicação, retornando ao normal ao fechar o Widget ou, em casos super isolados, atualizando a página.
+
+### Screenshots
+![image](https://user-images.githubusercontent.com/56923620/209585701-90d5550a-163a-4556-b209-98ad4cfc99dd.png)
+<div align="center">
+<i>Modal que é aberto ao clicar em uma imagem. Aqui o usuário faz a seleção de uma área da imagem para extração e tradução do texto em Libras. A utilização deste passo (levando em consideração que o usuário faça a seleção adequada de uma área da imagem com textos) aumenta a chance de acerto do algorítimo que realiza o reconhecimento de caracteres, o que não seria possível se a imagem completa fosse passada diretamente.</i>
+</div>
+
+#
+
+![image](https://user-images.githubusercontent.com/56923620/209585793-1e3760ee-3f66-4936-a60f-a7f3cb01cbf6.png)
+<div align="center">
+<i>Imagens filhas de tags âncoras/links que, ao serem clicadas, fazem o redirecionamento do usuário, têm o redirecionamento do seu pai removido e é adicionado o tooltip "Acessar link" próximo ao seu bottom, assim, possibilitando o usuário clicar na imagem sem ser redirecionado pelo site e, caso queira acessar o link, pode clicar no tooltip.</i>
+</div>
