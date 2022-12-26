@@ -18,7 +18,7 @@ Com o intuito de aumentar ainda mais o acesso à comunidade surda, esta feature 
 ### Como testar
 1. Copie o script da feature já "buildado" em <a href="https://raw.githubusercontent.com/diegofrr/vlibras-widget-ocr/main/dist/bundle.js">/dist/bundle.js</a>;
 2. Vá até um site que tenha o VLibras Widget. Ex.: <a href="https://www.gov.br/pt-br">gov.br</a>;
-3. Cole e execute o script do bundle.js dentro do seu console;
+3. Após o botão flutuante do Widget aparecer, cole e execute o script do bundle.js dentro do console;
 4. Inicie o VLibras Widget: clique no botão flutuante das mãozinhas ao lado direito da página;
 5. Utilize a funcionalidade selecionando uma imagem do site que contenha texto.
 
