@@ -1,26 +1,21 @@
-let cloneLinks = [];
+let linksList = [];
 
 export function LinksConfig() {
   document.querySelectorAll("a").forEach((link) => {
     try {
       const parentNodeClasses = link.parentNode.classList;
-      if (!parentNodeClasses.contains("vw-tooltip__item")) {
-        link.addEventListener("click", (event) => {
-          event.preventDefault();
-        });
+      if (!parentNodeClasses.contains("vw-tooltip__item") && link.href) {
+        const href = link.href;
+        link.removeAttribute("href");
+        linksList.push({ link, href });
       }
-      const clone = link;
-      cloneLinks.push({
-        link,
-        clone,
-      });
     } catch {}
   });
 }
 
 export function removeLinksConfig() {
-  cloneLinks.forEach((item) => {
-    item.link.replaceWith(item.clone.cloneNode(true));
+  linksList.forEach((item) => {
+    item.link.href = item.href;
   });
-  cloneLinks = [];
+  linksList = [];
 }

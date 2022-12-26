@@ -25,6 +25,8 @@ function initializeVlibrasWidgetOCR() {
   ImagesConfig();
   LinksConfig();
 
+  window.addEventListener("resize", ImagesConfig, false);
+
   MasterOCRElement.classList.add("vwo-cropper-modal", "vwo--hidden");
   document.body.appendChild(MasterOCRElement);
   document.querySelector("body").classList.add("vwo-scrollBar--hidden");

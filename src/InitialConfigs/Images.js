@@ -1,8 +1,9 @@
 import { loadModal } from "../Components/Modal";
 
-window.addEventListener("resize", ImagesConfig);
+let working = false;
 
 export function ImagesConfig() {
+  working = true;
   createLinksContainer();
   document.querySelectorAll("img").forEach((img) => {
     if (img.clientWidth + img.clientHeight > 100) {
@@ -16,6 +17,7 @@ export function ImagesConfig() {
       img.addEventListener(
         "click",
         () => {
+          if (!working) return;
           loadModal(img);
         },
         false
@@ -25,6 +27,7 @@ export function ImagesConfig() {
 }
 
 export function removeImagesConfig() {
+  working = false;
   document.querySelectorAll("img").forEach((img) => {
     img.classList.remove("vwo-img-ocr");
 
@@ -66,21 +69,29 @@ function addTooltip(image) {
   tooltip.style.top = distanceToTop + image.clientHeight - 35 + "px";
   tooltip.style.left = distanceToLeft + image.clientWidth / 2 + "px";
 
-  image.addEventListener("mouseover", () => {
+  image.addEventListener("mouseover", imageMouseOver, false);
+  image.addEventListener("mouseout", imageMouseOut, false);
+
+  tooltip.addEventListener("mouseover", tooltipMouseOver, false);
+  tooltip.addEventListener("mouseout", tooltipMouseOut, false);
+
+  function imageMouseOver() {
+    if (!working) return;
     linksContainer.innerHTML = "";
     tooltip.classList.remove("vwo--hidden");
     linksContainer.appendChild(tooltip);
-  });
+  }
 
-  image.addEventListener("mouseout", () => {
+  function imageMouseOut() {
+    if (!working) return;
     tooltip.classList.add("vwo--hidden");
-  });
+  }
 
-  tooltip.addEventListener("mouseover", () => {
+  function tooltipMouseOver() {
     tooltip.classList.remove("vwo--hidden");
-  });
+  }
 
-  tooltip.addEventListener("mouseout", () => {
+  function tooltipMouseOut() {
     tooltip.classList.add("vwo--hidden");
-  });
+  }
 }
