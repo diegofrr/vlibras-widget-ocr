@@ -1,5 +1,7 @@
 import { loadModal } from "../Components/Modal";
 
+window.addEventListener("resize", ImagesConfig);
+
 export function ImagesConfig() {
   createLinksContainer();
   document.querySelectorAll("img").forEach((img) => {
