@@ -44,7 +44,7 @@
   white-space: nowrap;
   border: none !important;
   transform: translateX(-50%);
-  border-radius: 20px;
+  border-radius: 4px;
   box-shadow: 2px 2px 5px rgb(0 0 0 / 20%);
 }
 
