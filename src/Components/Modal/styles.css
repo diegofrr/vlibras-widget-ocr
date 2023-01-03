@@ -13,10 +13,6 @@
   scrollbar-width: none;
 }
 
-.vwo-cropper-modal::-webkit-scrollbar {
-  display: none;
-}
-
 .vwo-cropper-modal button {
   cursor: pointer;
 }
