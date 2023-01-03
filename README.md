@@ -1,10 +1,12 @@
-<p align="center">
-<b>vlibras-widget-ocr</b>
-</p>
+<div align="center">
+<img height="60" src="https://user-images.githubusercontent.com/56923620/210437941-54e89bba-4a9f-4c64-94db-bfabf3eb88af.png" />
 
-<p align="center">
-Feature para a extração de textos em imagens e tradução em Libras em sites que utilizam o VLibras Widget
-</p>
+<b>` Versão BETA ` </b>
+
+<b>Feature para a extração de textos em imagens e tradução em Libras em sites que utilizam o VLibras Widget</b>
+</div>
+
+
 
 #
 
