@@ -40,6 +40,11 @@
   color: #1351b4 !important;
 }
 
+.vwo-cropper-buttons-container button:focus {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
 .vwo-cropper-buttons-container .vwo-close-modal:hover {
   color: #f32020 !important;
 }
