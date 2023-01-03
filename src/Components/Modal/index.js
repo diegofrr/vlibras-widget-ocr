@@ -15,6 +15,7 @@ export function loadModal(img) {
   MasterOCRElement.classList.remove("vwo--hidden");
   MasterOCRElement.innerHTML = template;
   MasterOCRElement.querySelector(".vwo-cropper-img").src = img.src;
+  document.querySelector("body").classList.add("vwo-scrollBar--hidden");
   loadActionButtons();
   loadCropper();
 }

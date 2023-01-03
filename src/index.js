@@ -29,7 +29,6 @@ function initializeVlibrasWidgetOCR() {
 
   MasterOCRElement.classList.add("vwo-cropper-modal", "vwo--hidden");
   document.body.appendChild(MasterOCRElement);
-  document.querySelector("body").classList.add("vwo-scrollBar--hidden");
 }
 
 export function destroyVlibrasWidgetOCR() {
