@@ -40,6 +40,10 @@ Obs.:
 - <b>Após o passo 3</b>, caso obtenha o erro relacionado ao histórico do console cheio, clique `CTRL + SHIF + P`, procure e execute a funcionalidade "Limpar histórico do console", logo após, cole e execute o script novamente.
 - Existe a possiblidade de alguns sites ficarem mal formatados e/ou quebrados após a aplicação, retornando ao normal ao fechar o Widget ou, em casos super isolados, atualizando a página.
 
+⚠️ ESTA MANEIRA DE TESTAR A IMPLEMENTAÇÃO É INFORMAL, A IDEIA FINAL TRAZ A SOLUÇÃO JÁ IMPLEMENTADA COM O WIDGET. ⚠️
+
+#
+
 ### Screenshots
 ![image](https://user-images.githubusercontent.com/56923620/209585701-90d5550a-163a-4556-b209-98ad4cfc99dd.png)
 <div align="center">
