@@ -6,12 +6,14 @@ export let extracting = false;
 
 export async function extractText(image) {
   if (extracting) return console.log("🤚 Já existe uma extração acontecendo.");
-  else {
-    extracting = true;
-  }
+  else extracting = true;
+
+  const progressBar = document.querySelector('.vwo-extraction-progress');
 
   const worker = await Tesseract.createWorker({
-    logger: (m) => {},
+    logger: (m) => {
+      if(m.jobId) progressBar.style.width =  m.progress * 100 + '%';
+    },
   });
   const scheduler = Tesseract.createScheduler();
   scheduler.addWorker(worker);

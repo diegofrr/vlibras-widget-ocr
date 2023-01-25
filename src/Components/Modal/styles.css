@@ -65,6 +65,7 @@
   justify-content: center;
   flex-direction: row;
   gap: 10px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -88,13 +89,22 @@
   cursor: wait;
 }
 
-.vwo-finished-extraction {
-  background-color: green;
+.vwo-extraction-progress {
+  display: block;
+  width: 0;
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 10px;
+  background-color: #1351b4;
+  border-radius: 0 10px 10px 0;
+  transition: all .3s ease;
 }
 
 @media only screen and (max-width: 480px) {
   .vwo-cropper-submit-button {
     width: 100%;
+    font-size: 12px;
   }
 
   .vwo-cropper-submit-button svg {
