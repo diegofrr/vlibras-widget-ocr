@@ -14,7 +14,7 @@
 .vwo-img-ocr {
   cursor: pointer;
   outline: 2px dashed transparent;
-  outline-offset: 2px;
+  outline-offset: 2px !important;
   transition: all 0.3s ease;
   position: relative;
   z-index: 10000 !important;
