@@ -8,9 +8,7 @@
   left: 0;
   display: grid;
   place-items: center;
-  overflow-y: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  overflow-y: auto;
 }
 
 .vwo-cropper-modal button {
