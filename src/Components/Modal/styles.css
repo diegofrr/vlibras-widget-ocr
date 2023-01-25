@@ -9,6 +9,7 @@
   display: grid;
   place-items: center;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .vwo-cropper-modal button {
