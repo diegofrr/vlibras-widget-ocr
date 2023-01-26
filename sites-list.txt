@@ -1,23 +1,33 @@
-Vivo
-http://vivo.com.br/
+Assembleia Legislativa da Paraíba
+http://www.al.pb.leg.br/
 
-Ministério do Trabalho e Previdência
-https://www.gov.br/trabalho-e-previdencia/pt-br
+Banco Central do Brasil
+https://www.bcb.gov.br/
+
+Controladora-Geral da União
+https://www.gov.br/cgu/pt-br
+
+Ministério da Educação
+https://www.gov.br/mec/pt-br
+
+Ministério da Justiça e Segurança Pública
+https://www.gov.br/mj/pt-br
 
 Ministério da Saúde
 https://www.gov.br/saude/pt-br
 
-Ministério Público Federal
-https://www.mpf.mp.br/
+Ministério de Minas e Energia
+https://www.gov.br/mme/pt-br
 
-Ministério da Defesa
-https://www.gov.br/defesa/pt-br
-
-Ministério Público da Paraíba
-https://www.mppb.mp.br/
+Ministério do Trabalho e Previdência
+https://www.gov.br/trabalho-e-previdencia/pt-br
 
 Portal da Legislação
 http://www4.planalto.gov.br/legislacao/
 
 Portal Nota Fiscal Eletrônica
 https://www.nfe.fazenda.gov.br/portal/principal.aspx
+
+Vivo
+http://vivo.com.br/
+
