@@ -23,7 +23,7 @@ Com o intuito de aumentar ainda mais o acesso à comunidade surda, esta feature 
 * Atualização de código baseado em novas features da biblioteca Tesseract.js;
 * Tratamento específico para imagens com background transparente;
 * Implementar pré-processador CSS ao invés de CSS puro;
-* Transformar em função padrão do **VLibras Widget**;
+* Transformar em função padrão do **VLibras Widget**.
 
 #
 
@@ -31,13 +31,13 @@ Com o intuito de aumentar ainda mais o acesso à comunidade surda, esta feature 
 1. Copie o script da feature já "buildado" em <a href="https://raw.githubusercontent.com/diegofrr/vlibras-widget-ocr/main/dist/bundle.js">/dist/bundle.js</a>;
 2. Vá até um site que tenha o VLibras Widget. Ex. de sites do Governo: <a href="http://www4.planalto.gov.br/legislacao/
 ">Portal da Legislação</a>, <a href="https://www.gov.br/defesa/pt-br">Ministério da Defesa</a>, <a href="https://www.gov.br/saude/pt-br
-">Ministério da Saúde<a/> e etc. (veja outros sites em: <a href="https://github.com/diegofrr/vlibras-widget-ocr/blob/main/sites-list.txt">/sites-list.txt</a>)
+">Ministério da Saúde<a/> e etc. (veja outros sites em: <a href="https://github.com/diegofrr/vlibras-widget-ocr/blob/main/sites-list.txt">/sites-list.txt</a>);
 3. Após o botão flutuante do Widget aparecer, cole e execute o script do bundle.js dentro do console;
 4. Inicie o VLibras Widget: clique no botão flutuante das mãozinhas ao lado direito da página;
 5. Utilize a funcionalidade selecionando uma imagem do site que contenha texto.
 
 Obs.:
-- <b>Após o passo 3</b>, caso obtenha o erro relacionado ao histórico do console cheio, clique `CTRL + SHIF + P`, procure e execute a funcionalidade "Limpar histórico do console", logo após, cole e execute o script novamente.
+- <b>Após o passo 3</b>, caso obtenha o erro relacionado ao histórico do console cheio, estando em algum navegador baseado em Chromium, clique `CTRL + SHIF + P`, procure e execute a funcionalidade "Limpar histórico do console", mas caso esteja navegando no Firefox, chame a função "clearHistory()" dentro do console, logo após, cole e execute o script novamente.
 - Existe a possiblidade de alguns sites ficarem mal formatados e/ou quebrados após a aplicação, retornando ao normal ao fechar o Widget ou, em casos super isolados, atualizando a página.
 
 ⚠️ ESTA MANEIRA DE TESTAR A IMPLEMENTAÇÃO É INFORMAL, A IDEIA FINAL TRAZ A SOLUÇÃO JÁ IMPLEMENTADA COM O WIDGET. ⚠️
