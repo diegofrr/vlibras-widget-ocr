@@ -6,7 +6,6 @@
 <b>Feature para a extração de textos em imagens e tradução em Libras em sites que utilizam o VLibras Widget</b>
 </div>
 
-
 #
 
 ### :pencil: Sobre
@@ -14,18 +13,7 @@ O <b>VLibras Widget</b> faz parte do conjunto de ferramentas da suíte <b>VLibra
 
 Com o intuito de aumentar ainda mais o acesso à comunidade surda, esta feature em questão agrega aos usuários também a possibilidade de traduzir textos presentes em imagens, utilizando uma tecnologia de reconhecimento de caracteres (OCR) fornecida por uma biblioteca JavaScript open-source, esta, a Tesseract.js - uma implementação "traduzida" para JavaScript utilizando WebAssembly da biblioteca original Tesseract OCR que é escrita na linguagem C e C++.
 
-### :construction: Trabalhos futuros
-
-Ferramenta:
-- [x] Aplicar escala de cinza nas imagens antes de enviar para reconhecimento de caracteres;
-- [ ] Atualização para as versões mais atuais das bibliotecas Tesseract.js e Cropper.js;
-- [ ] Tratamento específico para imagens com background transparente;
-- [ ] Implementar pré-processador CSS ao invés de CSS puro;
-- [ ] Melhoria automática no contraste das imagens.
-
-Outros:
-- [ ] Pesquisa de experiência de utilização junto a um grupo de deficientes auditivos;
-- [ ] Transformar em função padrão do **VLibras Widget**.
+<br/>
 
 ### :test_tube: Como testar
 1. Copie o script da feature já "buildado" em <a href="https://raw.githubusercontent.com/diegofrr/vlibras-widget-ocr/main/dist/bundle.js">/dist/bundle.js</a>;
@@ -36,7 +24,24 @@ Outros:
 4. Inicie o VLibras Widget: clique no botão flutuante das mãozinhas ao lado direito da página;
 5. Utilize a funcionalidade selecionando uma imagem do site que contenha texto.
 
-⚠️ Existe a possiblidade de alguns sites ficarem mal formatados e/ou quebrados após a aplicação, retornando ao normal ao fechar o Widget ou, em casos super isolados, sendo necessário atualizar a página.
+⚠️ _Existe a possiblidade de alguns sites ficarem mal formatados e/ou quebrados após a aplicação, retornando ao normal ao fechar o Widget ou, em casos super isolados, sendo necessário atualizar a página._
+
+<br/>  
+
+### :construction: Trabalhos futuros
+
+:hammer_and_wrench: Ferramenta:
+- [x] Aplicar escala de cinza nas imagens antes de enviar para reconhecimento de caracteres;
+- [ ] Atualização para as versões mais atuais das bibliotecas Tesseract.js e Cropper.js;
+- [ ] Tratamento específico para imagens com background transparente;
+- [ ] Implementar pré-processador CSS ao invés de CSS puro;
+- [ ] Melhoria automática no contraste das imagens.
+
+:heavy_plus_sign: Outros:
+- [ ] Pesquisa de experiência de utilização junto a um grupo de deficientes auditivos;
+- [ ] Transformar em função padrão do **VLibras Widget**.
+
+<br/>  
 
 ### :camera: Screenshots
 ![image](https://user-images.githubusercontent.com/56923620/209585701-90d5550a-163a-4556-b209-98ad4cfc99dd.png)
