@@ -20,7 +20,7 @@ Com o intuito de aumentar ainda mais o acesso à comunidade surda, esta feature 
 2. Vá até um site que tenha o VLibras Widget. Ex. de sites do governo: <a href="http://www4.planalto.gov.br/legislacao/
 ">Portal da Legislação</a>, <a href="https://www.gov.br/defesa/pt-br">Ministério da Defesa</a>, <a href="https://www.gov.br/saude/pt-br
 ">Ministério da Saúde<a/> e etc. (veja outros sites em: <a href="https://github.com/diegofrr/vlibras-widget-ocr/blob/main/sites-list.txt">/sites-list.txt</a>);
-3. Após o botão flutuante do Widget aparecer, cole o script do bundle.js dentro do console e execute;
+3. Abra o devtools do seu navegador com <kbd>F12</kbd> ou <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd>, cole e execute o script do bundle.js;
 4. Inicie o VLibras Widget: clique no botão flutuante das mãozinhas ao lado direito da página;
 5. Utilize a funcionalidade selecionando uma imagem do site que contenha texto.
 
