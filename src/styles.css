@@ -23,6 +23,7 @@
 .vwo-img-ocr:hover {
   filter: brightness(0.8);
   outline-color: #1351b4;
+  border-radius: 4px !important;
 }
 
 .vwo-image-links {
@@ -41,6 +42,7 @@
   background-color: #ffffff;
   padding: 0 10px;
   height: 30px;
+  font-size: 14px !important;
   white-space: nowrap;
   border: none !important;
   transform: translateX(-50%);
