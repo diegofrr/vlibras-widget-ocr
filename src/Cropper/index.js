@@ -64,11 +64,5 @@ export function loadCropper() {
 function translateWithVlibras(text) {
   hideModal();
   if (text === "") return;
-  try {
-    const vlibrasWidget = document.querySelector("vlibraswidget");
-    const oldValue = vlibrasWidget.innerHTML;
-    vlibrasWidget.innerHTML = text;
-    vlibrasWidget.click();
-    vlibrasWidget.innerHTML = oldValue;
-  } catch {}
+  console.log(text)
 }
