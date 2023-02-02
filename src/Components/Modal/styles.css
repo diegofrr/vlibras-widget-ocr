@@ -102,6 +102,10 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .vwo-cropper-title {
+    font-size: 14px;
+  }
+  
   .vwo-cropper-submit-button {
     width: 100%;
     font-size: 12px;
