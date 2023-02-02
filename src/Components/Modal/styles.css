@@ -40,11 +40,9 @@
   width: 100%;
   overflow: hidden;
   z-index: 1;
+  display: grid;
+  place-items: center;
   border-radius: 10px;
-}
-
-.vwo-cropper-img {
-  width: 100%;
 }
 
 .vwo--hidden {
