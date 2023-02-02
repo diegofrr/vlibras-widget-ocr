@@ -32,7 +32,7 @@ Com o intuito de aumentar ainda mais o acesso à comunidade surda, esta feature 
 
 :hammer_and_wrench: Ferramenta:
 - [x] Aplicar escala de cinza nas imagens antes de enviar para reconhecimento de caracteres;
-- [ ] Atualização para as versões mais atuais das bibliotecas Tesseract.js e Cropper.js;
+- [x] Atualização para as versões mais atuais das bibliotecas Tesseract.js e Cropper.js;
 - [ ] Tratamento específico para imagens com background transparente;
 - [ ] Implementar pré-processador CSS ao invés de CSS puro;
 - [ ] Melhoria automática no contraste das imagens.
