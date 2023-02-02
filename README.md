@@ -36,6 +36,7 @@ Com o intuito de aumentar ainda mais o acesso à comunidade surda, esta feature 
 - [ ] Tratamento específico para imagens com background transparente;
 - [ ] Implementar pré-processador CSS ao invés de CSS puro;
 - [ ] Melhoria automática no contraste das imagens.
+- [ ] Configurar ESlint + Prettier;
 
 :heavy_plus_sign: Outros:
 - [ ] Pesquisa de experiência de utilização junto a um grupo de deficientes auditivos;
