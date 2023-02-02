@@ -3,8 +3,8 @@ import { loadModal } from "../Components/Modal";
 let working = false;
 
 export function ImagesConfig() {
+  if(!working) createLinksContainer();
   working = true;
-  createLinksContainer();
   document.querySelectorAll("img").forEach((img) => {
     if (img.clientWidth + img.clientHeight > 100) {
       img.classList.add("vwo-img-ocr");
