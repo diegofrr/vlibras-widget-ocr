@@ -28,7 +28,7 @@ Apesar do VLibras Widget possibilitar o acesso à tradução da maior parte dos 
 4. Inicie o VLibras Widget: clique no botão flutuante das mãozinhas ao lado direito da página;
 5. Utilize a funcionalidade selecionando uma imagem do site que contenha texto.
 
-⚠️ _Existe a possiblidade de alguns sites ficarem mal formatados e/ou quebrados após a aplicação, retornando ao normal ao fechar o Widget ou, em casos super isolados, sendo necessário atualizar a página._
+⚠️ _Existe a possiblidade de alguns sites ficarem mal formatados e/ou quebrados após a implementação, retornando ao normal ao fechar o Widget ou, em casos super isolados, sendo necessário atualizar a página._
 
 <br/>  
 
