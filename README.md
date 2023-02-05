@@ -49,6 +49,16 @@ Apesar do VLibras Widget possibilitar o acesso à tradução da maior parte dos 
 
 <br/>  
 
+### 🛠️ Stack
+
+- [Webpack](https://webpack.js.org/)
+- [Cropperjs](https://fengyuanchen.github.io/cropperjs/)
+- [Tesseract.js](https://tesseract.projectnaptha.com/)
+- [Image-js](https://image-js.github.io/image-js/)
+- [Feather Icons](https://feathericons.com/)
+
+<br/>
+
 ### :camera: Screenshots
 
 ![image](https://user-images.githubusercontent.com/56923620/209585701-90d5550a-163a-4556-b209-98ad4cfc99dd.png)
