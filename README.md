@@ -50,12 +50,15 @@ Apesar do VLibras Widget possibilitar o acesso à tradução da maior parte dos 
 <br/>  
 
 ### 🛠️ Stack
-
-- [Webpack](https://webpack.js.org/)
-- [Cropperjs](https://fengyuanchen.github.io/cropperjs/)
-- [Tesseract.js](https://tesseract.projectnaptha.com/)
-- [Image-js](https://image-js.github.io/image-js/)
-- [Feather Icons](https://feathericons.com/)
+  
+  - JavaScript
+  - HTML
+  - CSS 
+  - Webpack
+  - Tesseract.js
+  - Cropperjs
+  - Image-js
+  - Feather Icons
 
 <br/>
 
