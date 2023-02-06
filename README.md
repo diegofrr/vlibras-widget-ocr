@@ -38,10 +38,10 @@ Apesar do VLibras Widget possibilitar o acesso à tradução da maior parte dos 
 
 - [x] Aplicar escala de cinza nas imagens antes de enviar para reconhecimento de caracteres;
 - [x] Atualização para as versões mais atuais das bibliotecas Tesseract.js e Cropper.js;
-- [ ] Configurar ESlint + Prettier.
+- [ ] Configurar ESlint + Prettier;
 - [ ] Tratamento específico para imagens com background transparente;
 - [ ] Implementar pré-processador CSS ao invés de CSS puro;
-- [ ] Melhoria automática no contraste das imagens;
+- [ ] Melhoria automática no contraste das imagens.
 
 **Outros**
 - [ ] Pesquisa de experiência de utilização junto a um grupo de deficientes auditivos;
