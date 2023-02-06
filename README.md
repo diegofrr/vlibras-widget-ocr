@@ -11,7 +11,7 @@
 ### :pencil: Sobre
 **VLibras Widget**
 
-O <b>VLibras Widget</b> faz parte do conjunto de ferramentas da suíte <b>VLibras</b> que tem como intuito traduzir conteúdos digitais em Português para Libras. Atualmente, sites que utiliza o Widget fornecem aos usuários a possiblidade de traduzirem para Libras os elementos de textos presentes no HTML na página, como por exemplo: títulos (h1, ..., h6), parágrafos (p), âncoras (a) e etc.
+O <b>VLibras Widget</b> faz parte do conjunto de ferramentas da suíte <b>VLibras</b> que tem como intuito traduzir conteúdos digitais em Português para Libras. Atualmente, sites que utilizam o Widget fornecem aos usuários a possiblidade de traduzirem para Libras os elementos de textos presentes no HTML na página, como por exemplo: títulos (h1, ..., h6), parágrafos (p), âncoras (a) e etc.
 
 **Motivação**
 
