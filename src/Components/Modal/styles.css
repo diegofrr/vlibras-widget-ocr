@@ -47,6 +47,15 @@
   display: none !important;
 }
 
+.vwo-submit-report-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+}
+
 .vwo-cropper-submit-button {
   height: 40px;
   border: none;
@@ -64,6 +73,24 @@
   gap: 10px;
   font-size: 14px;
   font-weight: bold;
+}
+
+.vwo-report-link {
+  display: grid;
+  place-items: center;
+  border: none;
+  font-size: 11px !important;
+  background: none;
+  cursor: pointer;
+  border-radius: 40px;
+  transition: all 0.3s ease;
+  color: #D2D2D2 !important;
+  text-decoration: none !important;
+  text-align: center;
+}
+
+.vwo-report-link:hover {
+  color: #e46b6b !important;
 }
 
 .vwo-cropper-submit-button svg {
@@ -109,5 +136,10 @@
 
   .vwo-cropper-submit-button svg {
     display: none;
+  }
+
+  .vwo-submit-report-buttons {
+    flex-direction: column;
+    gap: 16px
   }
 }
