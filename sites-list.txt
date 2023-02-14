@@ -4,11 +4,17 @@ http://www.al.pb.leg.br/
 Banco Central do Brasil
 https://www.bcb.gov.br/
 
-Banco do Brasil - Setor Público Federal
-https://www.bb.com.br/site//setor-publico/federal/
+Censo 2022 IBGE
+https://censo2022.ibge.gov.br/
 
-Controladoria-Geral da União
+CNPq
+https://www.gov.br/cnpq/pt-br
+
+Controladora-Geral da União
 https://www.gov.br/cgu/pt-br
+
+Governo da Paraíba
+https://paraiba.pb.gov.br/
 
 Ministério da Educação
 https://www.gov.br/mec/pt-br
@@ -31,6 +37,14 @@ http://www4.planalto.gov.br/legislacao/
 Portal Nota Fiscal Eletrônica
 https://www.nfe.fazenda.gov.br/portal/principal.aspx
 
+Prefeitura de Belo Horizonte
+https://prefeitura.pbh.gov.br/
+
+Secretaria de Estado da Saúde - RR
+https://saude.rr.gov.br/
+
+SEFAZ - Sergipe
+https://www.sefaz.se.gov.br/SitePages/default.aspx
+
 Vivo
 http://vivo.com.br/
-
