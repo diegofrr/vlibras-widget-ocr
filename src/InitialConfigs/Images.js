@@ -10,6 +10,9 @@ export function ImagesConfig() {
     make(img)
   });
 
+  // ADICIONAR 2 ELEMENTOS: UMA IMAGEM E UMA DIV
+  // A IMAGEM VAI SER ENVIADA PARA loadModal()
+  // DIV VAI FICAR COM A ESTILIZAÇÃO E onClick()
   document.querySelectorAll("div").forEach(div => {
     const style = window.getComputedStyle(div);
     const bg = style.getPropertyValue('background-image');
