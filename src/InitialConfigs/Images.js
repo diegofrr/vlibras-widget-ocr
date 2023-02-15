@@ -7,6 +7,23 @@ export function ImagesConfig() {
   working = true;
   
   document.querySelectorAll("img").forEach((img) => {
+    make(img)
+  });
+
+  document.querySelectorAll("div").forEach(div => {
+    const style = window.getComputedStyle(div);
+    const bg = style.getPropertyValue('background-image');
+    
+    if(bg.includes('url')) {
+        if(bg && bg !== null && bg !== 'none' && bg !== undefined) {
+          const url = bg.split('"')[1];
+          div.src = url;
+          make(div)
+        }
+      }
+  })
+
+  function make(img) {
     if (img.clientWidth + img.clientHeight > 100) {
       img.classList.add("vwo-img-ocr");
 
@@ -24,7 +41,7 @@ export function ImagesConfig() {
         false
       );
     }
-  });
+  }
 }
 
 export function removeImagesConfig() {
