@@ -3,7 +3,7 @@
 
 <b>` Versão BETA ` </b>
 
-<b>Feature para a extração de textos em imagens e tradução em Libras em sites que utilizam o VLibras Widget</b>
+<b>Feature para reconhecimento de caracteres em imagens e tradução em Libras utilizando o VLibras Widget</b>
 </div>
 
 #
