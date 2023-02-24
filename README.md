@@ -15,7 +15,7 @@ O <b>VLibras Widget</b> faz parte do conjunto de ferramentas da suíte <b>VLibra
 
 **Motivação**
 
-Apesar do VLibras Widget possibilitar o acesso à tradução da maior parte dos textos no site, existem outros que ficam fora desta solução - estes são os textos presentes em imagens. Tendo isto em mente, a fim de aumentar ainda mais o acesso à comunidade surda, esta feature agrega também aos usuários a possibilidade de traduzir textos presentes em imagens, utilizando uma tecnologia de reconhecimento de caracteres (OCR) fornecida por uma biblioteca _open-source_, esta, a <a href="https://github.com/naptha/tesseract.js/">Tesseract.js</a> - uma implementação "traduzida" para JavaScript utilizando WebAssembly da biblioteca original <a href="https://github.com/tesseract-ocr/tesseract">Tesseract OCR</a> que é escrita na linguagem C e C++.
+Apesar do VLibras Widget possibilitar o acesso à tradução da maior parte dos textos no site, existem outros que ficam fora desta solução - estes são os textos presentes em imagens. Tendo isto em mente, a fim de aumentar ainda mais o acesso à comunidade surda, esta feature agrega também aos usuários a possibilidade de traduzir textos presentes em imagens, utilizando uma tecnologia de reconhecimento de caracteres (OCR) fornecida por uma biblioteca _open-source_, esta, a <a href="https://github.com/naptha/tesseract.js/">Tesseract.js</a> - uma implementação "traduzida" para JavaScript utilizando WebAssembly da biblioteca original <a href="https://github.com/tesseract-ocr/tesseract">Tesseract OCR</a> que é escrita na linguagem C++.
 
 <br/>
 
