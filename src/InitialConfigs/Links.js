@@ -9,7 +9,7 @@ export function LinksConfig() {
         link.removeAttribute("href");
         linksList.push({ link, href });
       }
-    } catch {}
+    } catch { }
   });
 }
 

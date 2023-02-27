@@ -4,7 +4,7 @@ import "cropperjs/dist/cropper.css";
 import { Image } from "image-js";
 import { extracting } from "../Tesseract";
 import { extractText } from "../Tesseract";
-import { contrastImage } from "../Tesseract/utils";
+import { contrastImage } from '../utils';
 import { checkWindowSize } from "../Components/CheckWindowSize";
 import { loadingSpinnerHTML } from "../Components/LoadingSpinner";
 import { hideModal, loadModal } from "../Components/Modal";
@@ -34,7 +34,7 @@ export function loadCropper(img) {
   let cropper = new Cropper(image);
 
   window.onresize = () => {
-    if(!notWorking()) {
+    if (!notWorking()) {
       window.onresize = null;
       return;
     };
@@ -77,12 +77,12 @@ export function loadCropper(img) {
 
 function translateWithVlibras(text) {
   hideModal();
-  if (text === "") return;
+  if (!text.trim()) return;
   try {
     const vlibrasWidget = document.querySelector("vlibraswidget");
     const oldValue = vlibrasWidget.innerHTML;
     vlibrasWidget.innerHTML = text;
     vlibrasWidget.click();
     vlibrasWidget.innerHTML = oldValue;
-  } catch {}
+  } catch { }
 }
