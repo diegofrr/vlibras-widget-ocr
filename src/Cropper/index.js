@@ -77,7 +77,7 @@ export function loadCropper(img) {
 
 function translateWithVlibras(text) {
   hideModal();
-  if (text === "") return;
+  if (!text.trim()) return;
   try {
     const vlibrasWidget = document.querySelector("vlibraswidget");
     const oldValue = vlibrasWidget.innerHTML;
