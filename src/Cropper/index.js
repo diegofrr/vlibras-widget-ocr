@@ -44,13 +44,13 @@ export function loadCropper(img) {
 
   if (extracting) {
     submitButton.innerHTML = `Extraindo ${loadingSpinnerHTML()}`;
-    submitButton.setAttribute("disabled", "");
+    submitButton.classList.add('vwo-disabled-button');
   }
 
   submitButton.onclick = async () => {
     cropper.disable();
     submitButton.innerHTML = `Extraindo ${loadingSpinnerHTML()}`;
-    submitButton.setAttribute("disabled", "");
+    submitButton.classList.add('vwo-disabled-button');
     const croppedCanvas = cropper.getCroppedCanvas();
     const url = croppedCanvas.toDataURL("image/jpeg");
     let img = await imgPreprocessing(url);
