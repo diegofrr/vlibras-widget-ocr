@@ -1,15 +1,3 @@
-export function formattedText(text) {
-  text = removeSymbols(text);
-  text = text.replace(/\s{2,}/g, " ").replace(/[\r\n]/gm, " ");
-  return text.toUpperCase().trim();
-}
-
-function removeSymbols(text) {
-  let symbols = `'",._()[];|-—:~` + "`´";
-  for (let s of symbols) text = text.replaceAll(s, "");
-  return text;
-}
-
 export function contrastImage(imgData, contrast) {
   var d = imgData.data;
   contrast = contrast / 100 + 1;

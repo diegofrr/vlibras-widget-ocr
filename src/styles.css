@@ -60,7 +60,7 @@ div[vw] {
   z-index: 99999999 !important;
 }
 
-.vw-links .vw-tooltip.active > .vw-tooltip__item {
+.vw-links .vw-tooltip.active>.vw-tooltip__item {
   z-index: 10000 !important;
 }
 

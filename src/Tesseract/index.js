@@ -1,7 +1,5 @@
 import Tesseract from "tesseract.js";
 
-import { formattedText } from "./utils";
-
 export let extracting = false;
 
 export async function extractText(image) {
@@ -12,7 +10,7 @@ export async function extractText(image) {
 
   const worker = await Tesseract.createWorker({
     logger: (m) => {
-      if(m.jobId) progressBar.style.width =  m.progress * 100 + '%';
+      if (m.jobId) progressBar.style.width = m.progress * 100 + '%';
     },
   });
   const scheduler = Tesseract.createScheduler();
@@ -29,14 +27,12 @@ export async function extractText(image) {
         {},
         { imageColor: true, imageBinary: true, imageGrey: true }
       );
-      await worker.terminate().then(() => {
-        const _text = formattedText(text);
-        if (_text.length === 0) {
-          console.log("Nenhum texto extraído.");
-        }
+      return await worker.terminate().then(() => {
         extracting = false;
+        if (!text) console.log("Nenhum texto extraído.");
+        else console.log("Texto extraído: " + text);
+        return text;
       });
-      return formattedText(text);
     } catch {
       console.log("⚠️ Algo saiu errado :(");
       return "";
