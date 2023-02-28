@@ -42,15 +42,11 @@ export function loadCropper(img) {
     loadModal(img);
   }
 
-  if (extracting) {
-    submitButton.innerHTML = `Extraindo ${loadingSpinnerHTML()}`;
-    submitButton.classList.add('vwo-disabled-button');
-  }
+  if (extracting) ExtractingModeOfButton();
 
   submitButton.onclick = async () => {
     cropper.disable();
-    submitButton.innerHTML = `Extraindo ${loadingSpinnerHTML()}`;
-    submitButton.classList.add('vwo-disabled-button');
+    ExtractingModeOfButton();
     const croppedCanvas = cropper.getCroppedCanvas();
     const url = croppedCanvas.toDataURL("image/jpeg");
     let img = await imgPreprocessing(url);
@@ -60,6 +56,11 @@ export function loadCropper(img) {
   zoomInBtn().onclick = () => cropper.zoom(+0.1);
 
   zoomOutBtn().onclick = () => cropper.zoom(-0.1);
+
+  function ExtractingModeOfButton() {
+    submitButton.innerHTML = `Extraindo ${loadingSpinnerHTML()}`;
+    submitButton.classList.add('vwo-disabled-button');
+  }
 
   async function imgPreprocessing(src) {
     const manipulation = await Image.load(src);
