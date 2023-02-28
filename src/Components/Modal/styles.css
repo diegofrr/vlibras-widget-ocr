@@ -108,7 +108,7 @@
   background: #1351b4 !important;
 }
 
-.vwo-cropper-submit-button:disabled {
+.vwo-cropper-submit-button .vwo-disabled-button {
   user-select: none;
   cursor: wait;
 }
