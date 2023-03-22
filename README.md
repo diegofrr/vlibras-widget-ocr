@@ -11,11 +11,11 @@
 ### :pencil: Sobre
 **VLibras Widget**
 
-O <b>VLibras Widget</b> faz parte do conjunto de ferramentas da suíte <b>VLibras</b> que tem como intuito traduzir conteúdos digitais em Português para Libras. Atualmente, sites que utilizam o Widget fornecem aos usuários a possiblidade de traduzirem para Libras os elementos de textos presentes no HTML na página, como por exemplo: títulos (h1, ..., h6), parágrafos (p), âncoras (a) e etc.
+Entre o conjunto de ferramentas que fazem parte da família Suíte VLibras, faz-se relevante o VLibras Widget, este, ao ser integrado em um site, fica responsável por torná-lo acessível para pessoas surdas, possibilitando que estas realizem a tradução dos textos incorporados na página para Língua Brasileira de Sinais (Libras) utilizando um personagem 3D animado. 
 
 **Motivação**
 
-Apesar do VLibras Widget possibilitar o acesso à tradução da maior parte dos textos no site, existem outros que ficam fora desta solução - estes são os textos presentes em imagens. Tendo isto em mente, a fim de aumentar ainda mais o acesso à comunidade surda, esta feature agrega também aos usuários a possibilidade de traduzir textos presentes em imagens, utilizando uma tecnologia de reconhecimento de caracteres (OCR) fornecida por uma biblioteca _open-source_, esta, a <a href="https://github.com/naptha/tesseract.js/">Tesseract.js</a> - uma implementação "traduzida" para JavaScript utilizando WebAssembly da biblioteca original <a href="https://github.com/tesseract-ocr/tesseract">Tesseract OCR</a> que é escrita na linguagem C++.
+O VLibras Widget continua envoluindo com o tempo tornando o acesso à informação ainda mais amplo, contudo, apesar da ótima solução que se tornou, existe uma limitação importante nesta ferramenta, que é a impossibilidade de traduzir textos contidos em imagens, como fotos, gráficos e logotipos, o que cria uma barreira para o acesso à informação para usuários surdos e deficientes auditivos, visto que não é possível realizar a tradução das informações presentes em imagens nos sites. Diante desta limitação, o objetivo geral deste trabalho é desenvolver uma expansão para a ferramenta que torne também possível a tradução de textos originários de imagens utilizando o reconhecimento óptico de caracteres (OCR, em inglês), tornando o acesso à informação mais completo e inclusivo aos surdos.
 
 <br/>
 
