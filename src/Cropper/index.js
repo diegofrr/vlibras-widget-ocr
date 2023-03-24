@@ -47,7 +47,7 @@ export function loadCropper(img) {
   submitButton.onclick = async () => {
     cropper.disable();
     ExtractingModeOfButton();
-    const croppedCanvas = cropper.getCroppedCanvas();
+    const croppedCanvas = cropper.getCroppedCanvas({ minWidth: 600, maxWidth: 800 });
     const url = croppedCanvas.toDataURL("image/jpeg");
     let img = await imgPreprocessing(url);
     translateWithVlibras(await extractText(img));
