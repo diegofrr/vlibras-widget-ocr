@@ -29,7 +29,7 @@ export function ImagesConfig() {
 
 export function removeImagesConfig() {
   working = false;
-  document.querySelectorAll("img").forEach((img) => {
+  document.querySelectorAll(".vwo-img-ocr").forEach((img) => {
     img.classList.remove("vwo-img-ocr");
 
     if (img.getAttribute("_old-title")) {

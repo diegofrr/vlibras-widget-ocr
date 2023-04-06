@@ -23,12 +23,17 @@ export function loadCropper(img) {
 
   const { naturalWidth, naturalHeight } = img;
 
-  if (naturalWidth > naturalHeight) {
+  console.log(naturalWidth, naturalHeight)
+
+  if (
+    (naturalHeight > innerHeight * .6) ||
+    (naturalHeight > naturalWidth)
+  ) {
+    imageContent.style.height = '50vh';
+    image.style.height = '100%';
+  } else {
     imageContent.style.minHeight = '0';
     image.style.width = '100%';
-  } else {
-    imageContent.style.minHeight = '50vh';
-    image.style.height = '100%';
   }
 
   let cropper = new Cropper(image);
@@ -47,7 +52,7 @@ export function loadCropper(img) {
   submitButton.onclick = async () => {
     cropper.disable();
     ExtractingModeOfButton();
-    const croppedCanvas = cropper.getCroppedCanvas({ minWidth: 600, maxWidth: 800 });
+    const croppedCanvas = cropper.getCroppedCanvas({ minWidth: 800, maxWidth: 800 });
     const url = croppedCanvas.toDataURL("image/jpeg");
     let img = await imgPreprocessing(url);
     translateWithVlibras(await extractText(img));
