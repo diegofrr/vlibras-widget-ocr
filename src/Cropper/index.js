@@ -23,16 +23,15 @@ export function loadCropper(img) {
 
   const { naturalWidth, naturalHeight } = img;
 
-  console.log(naturalWidth, naturalHeight)
-
   if (
     (naturalHeight > innerHeight * .6) ||
     (naturalHeight > naturalWidth)
   ) {
-    imageContent.style.height = '50vh';
+    imageContent.style.height = '55vh';
     image.style.height = '100%';
   } else {
     imageContent.style.minHeight = '0';
+    imageContent.style.maxHeight = '55vh';
     image.style.width = '100%';
   }
 

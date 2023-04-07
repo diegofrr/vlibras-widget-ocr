@@ -1,5 +1,5 @@
 .vwo-cropper-modal {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.9);
@@ -19,9 +19,8 @@
 .vwo-cropper-title {
   color: #ffffff;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   width: 100%;
-  max-width: 400px;
   line-height: 1.5;
 }
 
