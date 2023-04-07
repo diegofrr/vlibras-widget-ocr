@@ -41,7 +41,6 @@ O VLibras Widget continua envoluindo com o tempo tornando o acesso à informaç�
 - [ ] Configurar ESlint + Prettier;
 - [ ] Tratamento específico para imagens com background transparente;
 - [ ] Implementar pré-processador CSS ao invés de CSS puro;
-- [ ] Melhoria automática no contraste das imagens.
 
 **Outros**
 - [ ] Pesquisa de experiência de utilização junto a um grupo de deficientes auditivos;
@@ -57,7 +56,6 @@ O VLibras Widget continua envoluindo com o tempo tornando o acesso à informaç�
   - Webpack
   - Tesseract.js
   - Cropperjs
-  - Image-js
   - Feather Icons
 
 <br/>
