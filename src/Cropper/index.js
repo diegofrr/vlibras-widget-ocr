@@ -51,7 +51,7 @@ export function loadCropper(img) {
   submitButton.onclick = async () => {
     cropper.disable();
     ExtractingModeOfButton();
-    const croppedCanvas = cropper.getCroppedCanvas({ minWidth: 800, maxWidth: 800 });
+    const croppedCanvas = cropper.getCroppedCanvas({ minWidth: 800 });
     const url = croppedCanvas.toDataURL("image/jpeg");
     let img = await imgPreprocessing(url);
     translateWithVlibras(await extractText(img));
@@ -83,11 +83,5 @@ export function loadCropper(img) {
 function translateWithVlibras(text) {
   hideModal();
   if (!text.trim()) return;
-  try {
-    const vlibrasWidget = document.querySelector("vlibraswidget");
-    const oldValue = vlibrasWidget.innerHTML;
-    vlibrasWidget.innerHTML = text;
-    vlibrasWidget.click();
-    vlibrasWidget.innerHTML = oldValue;
-  } catch { }
+  window.plugin.player.translate(text);
 }

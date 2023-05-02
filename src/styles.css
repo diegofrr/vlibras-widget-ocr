@@ -17,7 +17,6 @@
   outline-offset: 2px !important;
   transition: all 0.3s ease;
   position: relative;
-  z-index: 10000 !important;
 }
 
 .vwo-img-ocr:hover {
@@ -27,7 +26,6 @@
 }
 
 .vwo-image-links {
-  z-index: 100000 !important;
   position: absolute;
   top: 0;
   left: 0;
@@ -56,7 +54,7 @@
 
 /* VLibras Widget */
 
-div[vw] {
+/* div[vw] {
   z-index: 99999999 !important;
 }
 
@@ -67,4 +65,4 @@ div[vw] {
 vlibraswidget.vw-text {
   z-index: 10000 !important;
   position: relative;
-}
+} */
