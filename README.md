@@ -7,6 +7,14 @@
 </div>
 
 #
+<div align="center">
+  
+⚠️ **IMPORTANTE** ⚠️<br>
+Devido ao novo layout implementado no VLibras Widget, esta solução pode apresentar problemas.<br>
+Brevemente, correções necessárias serão implementadas.
+</div>
+
+#
 
 ### :pencil: Sobre
 **VLibras Widget**
