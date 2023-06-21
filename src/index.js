@@ -1,23 +1,22 @@
-import { hideModal } from "./Components/Modal";
+import "./styles.css";
 import "./Cropper/index";
+import "./Tesseract/index";
+
+import { hideModal } from "./Components/Modal";
 import { ImagesConfig, removeImagesConfig } from "./InitialConfigs/Images";
 import { LinksConfig, removeLinksConfig } from "./InitialConfigs/Links";
-import "./Tesseract/index";
-import "./styles.css";
 
 const vwButton = document.querySelector("div[vw-access-button]");
 const vwBox = document.querySelector("div[vp-box]");
-const observer = new MutationObserver((mutation) => {
-  vwBox
-    .querySelector(".vpw-settings-btn-close")
-    .addEventListener("click", () => destroyVlibrasWidgetOCR());
-});
+
+window.addEventListener(
+  'vp-widget-close',
+  destroyVlibrasWidgetOCR
+);
 
 vwButton.addEventListener("click", () => {
   initializeVlibrasWidgetOCR();
 });
-
-observer.observe(vwBox, { childList: true });
 
 export let MasterOCRElement = document.createElement("div");
 
